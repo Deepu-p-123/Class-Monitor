@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/blocked.html" } },
+    "condition": {
+      "requestDomains": [
+  "chatgpt.com", "chat.openai.com", "openai.com", "sora.com",
+  "gemini.google.com", "aistudio.google.com", "notebooklm.google.com", "bard.google.com",
+  "claude.ai", "copilot.microsoft.com",
+  "perplexity.ai", "you.com", "phind.com", "pi.ai", "meta.ai",
+  "grok.com", "x.ai", "deepseek.com", "chat.deepseek.com",
+  "chat.mistral.ai", "chat.qwen.ai", "kimi.com", "doubao.com",
+  "character.ai", "poe.com", "janitorai.com",
+  "lmarena.ai", "openrouter.ai", "t3.chat", "monica.im",
+  "jasper.ai", "writesonic.com", "copy.ai", "gamma.app",
+  "gauthmath.com", "photomath.com", "brainly.com", "chegg.com",
+  "mathway.com", "studyx.ai", "questionai.com",
+  "undetectable.ai", "stealthgpt.ai", "hix.ai",
+  "midjourney.com", "leonardo.ai", "ideogram.ai"
+],
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]

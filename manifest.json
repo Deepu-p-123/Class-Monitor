@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Class Monitor",
+  "version": "1.2",
+  "permissions": ["declarativeNetRequest", "tabs", "storage", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "AI blocking", "default_popup": "popup.html" },
+  "declarative_net_request": {
+    "rule_resources": [
+      { "id": "ai_block", "enabled": true, "path": "rules.json" }
+    ]
+  },
+  "web_accessible_resources": [
+    { "resources": ["blocked.html"], "matches": ["<all_urls>"] }
+  ]
+}
