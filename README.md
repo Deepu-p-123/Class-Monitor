@@ -89,9 +89,7 @@ Use only on school-owned devices, and inform students and parents about what is 
 2. Replace the files on the target computer (or upload a new ZIP to the Chrome Web Store).
 3. Click **reload** on the extension card.
 
-## License
 
-[Choose a license, for example MIT, or write "All rights reserved" if the code is private]
 
 ## Author
 
