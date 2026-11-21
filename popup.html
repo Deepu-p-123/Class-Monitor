@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <style>
-    body { font-family: sans-serif; width: 240px; padding: 12px; }
-    input, button { width: 100%; box-sizing: border-box; margin-top: 8px; padding: 8px; }
-    #msg { color: #c0392b; font-size: 13px; margin-top: 6px; min-height: 16px; }
-    #status { font-weight: bold; }
+    body {
+      font-family: sans-serif;
+      width: 240px;
+      padding: 12px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .teacher-icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      color: #2c3e50;
+    }
+
+    input,
+    button {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 8px;
+      padding: 8px;
+    }
+
+    #msg {
+      color: #c0392b;
+      font-size: 13px;
+      margin-top: 6px;
+      min-height: 16px;
+    }
+
+    #status {
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <div>AI blocking: <span id="status">...</span></div>
+  <div class="header">
+    <!-- Teacher icon -->
+    <svg
+      class="teacher-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <circle cx="12" cy="6" r="3"></circle>
+      <path d="M4 21v-1a8 8 0 0 1 16 0v1"></path>
+      <path d="M8 12h8"></path>
+      <path d="M9 15h6"></path>
+    </svg>
+
+    <div>
+      AI blocking: <span id="status">...</span>
+    </div>
+  </div>
+
   <input type="password" id="pw" placeholder="Teacher password">
   <button id="action"></button>
   <div id="msg"></div>
+
   <script src="popup.js"></script>
 </body>
 </html>
